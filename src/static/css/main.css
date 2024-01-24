@@ -1,0 +1,146 @@
+/*!
+ * Copyright 2024 Developed by Anggin Megantara
+ * Version 1.0.0
+ */
+
+* {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    padding: 0;
+}
+
+html, body {
+    /* overflow-x: hidden; */
+    max-width: 100vw;
+}
+/* General */
+.btn-custom-outline {
+    border-width: 2px!important;
+    border-color: #5AD0EB!important;
+    color: #5AD0EB!important;
+    font-weight: bold!important;
+}
+.btn-custom-outline:hover {
+    color: #fafafa!important;
+}
+.btn-custom {
+    background-color: #0CBAFC!important;
+    border-color: #57CFEC!important;
+}
+@media(max-width:768px) {
+    #vh-responsive-50 {
+        min-height: 50vh !important;
+    }
+}
+@media (min-width:768px) {
+    .mt-md-n10 {
+        margin-top: -10rem;
+    }
+}
+/* Navbar */
+.navbar-nav a {
+    font-size: 18px;
+    margin-inline: .3rem;
+}
+
+.navbar.nav-scroll {
+    background-color: #57CFEC;
+}
+.nav-scroll .navbar-nav a {
+    color: #fafafa!important;
+}
+.nav-scroll .btn-custom-outline {
+    border-color: #fafafa !important;
+    color: #fafafa !important;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+    .navbar-nav a {
+        margin-bottom: 1rem;
+    }
+    #basic-navbar-nav.show {
+        transform: translateX(0);
+    }
+    #basic-navbar-nav {
+        background-color: #fafafa;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 250px;
+        transform: translateX(-100%);
+        transition: all 0.2s ease;
+    }
+    .nav-scroll .navbar-nav a {
+        color: #000!important;
+    }
+    .nav-scroll .btn-custom-outline {
+        border-color: #5AD0EB !important;
+        color: #5AD0EB !important;
+    }
+    .bg-logo {
+        height: 150px;
+    }
+}
+
+/* Hero */
+#home p {
+    --animate-delay: 0.5s;
+}
+.judul {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* About */
+.bg-kiri {
+    position: absolute;
+    top: -50%;
+    left: 0;
+}
+.bg-kanan {
+    position: absolute;
+    bottom: -70%;
+    right: 0;
+}
+
+/* Pricing */
+@media (min-width :992px) {
+    #CardPrice {
+        width: 18rem;
+    }
+}
+.bg-icon {
+    background: #333;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 1.8;
+    border-radius: 15px;
+}
+@media (max-width:768px) {
+    #CardPrice {
+        width: 100%;
+    }
+}
+
+/* Contact */
+.bg-contact {
+    right: 0;
+    bottom: -5%;
+}
+
+@media (max-width:720px) {
+    .bg-contact {
+        bottom: -10%;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 360px) and (-webkit-min-device-pixel-ratio: 2) {
+    .bg-contact {
+        bottom: -14%;
+    }
+}
